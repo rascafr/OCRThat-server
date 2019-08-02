@@ -24,10 +24,11 @@ if (args.length > 2) {
 
 app.post('/ocrThat', (req, res) => {
     let files = req.files;
-    if (files.length === 1) {
+    if (files && files.length === 1) {
         let file = files[0];
         startOCR(file.path).then(data => {
             console.log('Processed document,', data.parags.length, 'paragraphs in', data.duration, 'ms');
+            res.setHeader('Content-Type', 'application/json');
             res.send(JSON.stringify(data));
         }).catch(err => {
             console.log('Error during OCR sequence', err);
