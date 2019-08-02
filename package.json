@@ -1,0 +1,22 @@
+{
+  "name": "ocrthat-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rascafr/OCRThat-server.git"
+  },
+  "author": "François Leparoux <francois.leparoux@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rascafr/OCRThat-server/issues"
+  },
+  "homepage": "https://github.com/rascafr/OCRThat-server#readme",
+  "dependencies": {
+    "node-tesseract-ocr": "^0.1.0"
+  }
+}
