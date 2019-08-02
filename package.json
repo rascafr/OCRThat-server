@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rascafr/OCRThat-server#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "node-tesseract-ocr": "^0.1.0"
   }
 }
