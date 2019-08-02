@@ -27,7 +27,7 @@ app.post('/ocrThat', (req, res) => {
     if (files.length === 1) {
         let file = files[0];
         startOCR(file.path).then(data => {
-            console.log('Processed document,', data.parags, 'paragraphs in', data.duration, 'ms');
+            console.log('Processed document,', data.parags.length, 'paragraphs in', data.duration, 'ms');
             res.send(JSON.stringify(data));
         }).catch(err => {
             console.log('Error during OCR sequence', err);
