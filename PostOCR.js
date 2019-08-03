@@ -53,7 +53,7 @@ PostOCR.lang_detect = function(bloc) {
     let max = 0;
     let decision = null;
     res.forEach(r => {
-        if (r.score > max) {
+        if (r && r.score > max) {
             max = r.score;
             decision = r;
         }
